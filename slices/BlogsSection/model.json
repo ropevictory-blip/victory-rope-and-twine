@@ -1,0 +1,26 @@
+{
+  "id": "blogs_section",
+  "type": "SharedSlice",
+  "name": "BlogsSection",
+  "description": "BlogsSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "number": {
+          "type": "Number",
+          "config": {
+            "label": "Number",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

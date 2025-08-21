@@ -1,0 +1,68 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Eu exercitation et excepteur eu deserunt id culpa sit ut adipisicing excepteur. Do sunt excepteur sunt ex ullamco dolore mollit eiusmod fugiat nulla exercitation in."
+						}
+					}
+				]
+			},
+			"button": {
+				"key": "9f1e90b5-697a-4817-a585-7ad254591297",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://slicemachine.dev",
+					"text": "fine"
+				}
+			}
+		},
+		"items": []
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "grid",
+		"primary": {
+			"subheading": {
+				"__TYPE__": "FieldContent",
+				"value": "trick",
+				"type": "Text"
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Shaking"
+						}
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Minim minim nisi nostrud mollit eu officia Lorem. Irure consequat voluptate aliquip id exercitation sint quis magna aute nulla do velit."
+						}
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
+]

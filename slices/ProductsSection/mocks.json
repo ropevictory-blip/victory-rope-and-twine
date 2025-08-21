@@ -1,0 +1,14 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"number": {
+				"__TYPE__": "FieldContent",
+				"value": "voyage",
+				"type": "Text"
+			}
+		},
+		"items": []
+	}
+]

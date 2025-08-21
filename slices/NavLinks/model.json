@@ -1,0 +1,48 @@
+{
+  "id": "nav_links",
+  "type": "SharedSlice",
+  "name": "NavLinks",
+  "description": "NavLinks",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "nav_link": {
+          "type": "Link",
+          "config": {
+            "label": "Nav Link",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
+          }
+        },
+        "nav_links": {
+          "type": "Group",
+          "config": {
+            "label": "Nav Links",
+            "repeat": true,
+            "fields": {
+              "nav_link": {
+                "type": "Link",
+                "config": {
+                  "label": "Nav Link",
+                  "placeholder": "",
+                  "allowTargetBlank": true,
+                  "select": null,
+                  "allowText": true
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"address": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Adipisicing consectetur eiusmod dolor veniam."
+						}
+					}
+				]
+			},
+			"form_heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Salmon"
+						}
+					}
+				]
+			},
+			"form_description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Commodo et eu quis occaecat mollit elit non sunt mollit sint proident tempor. Ipsum culpa dolor fugiat ea consectetur adipisicing pariatur reprehenderit ut eiusmod commodo fugiat amet. Fugiat ex consequat cillum nostrud ad occaecat cillum."
+						}
+					}
+				]
+			},
+			"contact_items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "composed",
+									"type": "Text"
+								}
+							],
+							[
+								"contact_details",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Commodo deserunt deserunt et dolor ipsum sint laborum. Laborum exercitation irure aliqua."
+											}
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

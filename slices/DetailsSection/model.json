@@ -1,0 +1,38 @@
+{
+  "id": "details_section",
+  "type": "SharedSlice",
+  "name": "DetailsSection",
+  "description": "DetailsSection",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "details": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Details",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,heading2,heading3,strong,em,hyperlink,list-item,o-list-item,heading4"
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 1000
+            },
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
