@@ -1,21 +1,18 @@
 import Heading from "../heading/Heading";
 import { ProductItem } from "./ProductsSection";
+import JuteRope from "./JuteRope";
+import ManillaRope from "./ManilaRopes";
+import SisalRopes from "./SisalRopes";
 
-const extraData = {
-  'jute-ropes':
-  {
-    heading1: 'Jute Rope',
-    drescription: 'Biodegradable ropes with a soft, natural texture and excellent grip. Great for packaging, gardening, and DIY crafts.',
-  }
-
-}
 
 const CategoryProductsSection = async ({ slice: { primary }, docs }) => {
+  console.log(docs);
 
   return (
     <div className="section-full content-inner-2 bg-gray">
       <div className="container">
-        <Heading { ...primary } />
+        <Heading { ...primary } docs={ docs } />
+
         { docs?.length > 0 ? (
           <div className="row justify-content-center rowGap30">
             { docs.map((item, index) => (
@@ -34,6 +31,16 @@ const CategoryProductsSection = async ({ slice: { primary }, docs }) => {
           >
             No Products Found
           </div>
+        ) }
+
+        { docs?.[0]?.uid === "jute-rope" && (
+          <JuteRope />
+        ) }
+         { docs?.[0]?.uid === "manila-ropes" && (
+          <ManillaRope />
+        ) }
+        { docs?.[0]?.uid === "sisal-rope" && (
+          <SisalRopes />
         ) }
       </div>
     </div>
