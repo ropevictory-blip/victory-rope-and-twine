@@ -1,3 +1,6 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Heading from "../heading/Heading";
 import { ProductItem } from "./ProductsSection";
 import JuteRope from "./JuteRope";
@@ -7,7 +10,8 @@ import SisalRopes from "./SisalRopes";
 
 const CategoryProductsSection = async ({ slice: { primary }, docs }) => {
   console.log(docs);
-
+  const pathname = usePathname();
+  
   return (
     <div className="section-full content-inner-2 bg-gray">
       <div className="container">
@@ -33,12 +37,17 @@ const CategoryProductsSection = async ({ slice: { primary }, docs }) => {
           </div>
         ) }
 
+        {/* Show extra text only for /category/manila-ropes */ }
+        { pathname === "/category/manila-ropes" && (
+          <ManillaRope />
+        ) }
+
         { docs?.[0]?.uid === "jute-rope" && (
           <JuteRope />
         ) }
-         { docs?.[0]?.uid === "manila-ropes" && (
+        {/* { docs?.[0]?.uid === "manila-rope-product" && (
           <ManillaRope />
-        ) }
+        ) } */}
         { docs?.[0]?.uid === "sisal-rope" && (
           <SisalRopes />
         ) }
