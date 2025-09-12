@@ -17,8 +17,8 @@ const CTASection = ({
           data-sal-duration="1200"
         >
           <div className="col-lg-9 text-white">
-            <h2 className="title">{heading[0].text}</h2>
-            <p className="m-b0">{description[0].text}</p>
+            <h2 className="title">{heading[0]?.text}</h2>
+            <p className="m-b0">{description[0]?.text}</p>
           </div>
           <div className="col-lg-3 d-lg-flex">
             <PrismicNextLink
