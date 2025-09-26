@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    
+    <!-- Main Pages -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/about</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/contact</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://www.victoryropeandtwine.com/uae</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/faq</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Product Categories -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/ropes</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/twines</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/cords</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/straps</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/accessories</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Individual Product Pages -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/nylon-rope</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/polypropylene-rope</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/cotton-twine</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/products/jute-twine</loc>
+        <lastmod>2024-01-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Informational Pages -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/rope-selection-guide</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/care-instructions</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/safety-information</loc>
+        <lastmod>2024-01-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <!-- Customer Service Pages -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/shipping</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/returns</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/wholesale</loc>
+        <lastmod>2024-01-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- Blog/Articles (if applicable) -->
+    <url>
+        <loc>https://www.victoryropeandtwine.com/blog</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/blog/rope-maintenance-tips</loc>
+        <lastmod>2024-01-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    
+    <url>
+        <loc>https://www.victoryropeandtwine.com/blog/choosing-right-twine</loc>
+        <lastmod>2024-01-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+</urlset>
