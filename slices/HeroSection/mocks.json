@@ -26,6 +26,7 @@
 				]
 			},
 			"button": {
+				"key": "6537f217-7a72-46b6-99cc-53ae5c0bb651",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "ExternalLink",
@@ -34,6 +35,7 @@
 				}
 			},
 			"video": {
+				"key": "75f32604-4c64-43b4-ba67-b45cc314dfa1",
 				"__TYPE__": "LinkContent",
 				"value": {
 					"__TYPE__": "FileLink",
@@ -95,6 +97,11 @@
 				"alt": null,
 				"__TYPE__": "ImageContent",
 				"thumbnails": {}
+			},
+			"super_text": {
+				"__TYPE__": "FieldContent",
+				"value": "stronger",
+				"type": "Text"
 			}
 		},
 		"items": [

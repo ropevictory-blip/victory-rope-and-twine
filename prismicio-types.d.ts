@@ -2329,6 +2329,16 @@ export interface HeroSectionSliceSecondaryPrimary {
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
   description: prismic.RichTextField;
+
+  /**
+   * Super Text field in *HeroSection → Secondary → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Enter Super Text here
+   * - **API ID Path**: hero_section.secondary.primary.super_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  super_text: prismic.KeyTextField;
 }
 
 /**
@@ -3080,6 +3090,71 @@ export type TestimonialsSectionSlice = prismic.SharedSlice<
 >;
 
 /**
+ * Primary content in *VideoContent → Video_Content → Primary*
+ */
+export interface VideoContentSliceDefaultPrimary {
+  /**
+   * Image field in *VideoContent → Video_Content → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: video_content.default.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Heading field in *VideoContent → Video_Content → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Heading
+   * - **API ID Path**: video_content.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  heading: prismic.KeyTextField;
+
+  /**
+   * video field in *VideoContent → Video_Content → Primary*
+   *
+   * - **Field Type**: Embed
+   * - **Placeholder**: video
+   * - **API ID Path**: video_content.default.primary.video
+   * - **Documentation**: https://prismic.io/docs/field#embed
+   */
+  video: prismic.EmbedField;
+}
+
+/**
+ * Video_Content variation for VideoContent Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type VideoContentSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<VideoContentSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *VideoContent*
+ */
+type VideoContentSliceVariation = VideoContentSliceDefault;
+
+/**
+ * VideoContent Shared Slice
+ *
+ * - **API ID**: `video_content`
+ * - **Description**: VideoContent
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type VideoContentSlice = prismic.SharedSlice<
+  "video_content",
+  VideoContentSliceVariation
+>;
+
+/**
  * Item in *WhyUsSection → Default → Primary → Items*
  */
 export interface WhyUsSectionSliceDefaultPrimaryItemsItem {
@@ -3425,6 +3500,10 @@ declare module "@prismicio/client" {
       TestimonialsSectionSliceDefaultPrimary,
       TestimonialsSectionSliceVariation,
       TestimonialsSectionSliceDefault,
+      VideoContentSlice,
+      VideoContentSliceDefaultPrimary,
+      VideoContentSliceVariation,
+      VideoContentSliceDefault,
       WhyUsSectionSlice,
       WhyUsSectionSliceDefaultPrimaryItemsItem,
       WhyUsSectionSliceDefaultPrimaryBlocksItem,
