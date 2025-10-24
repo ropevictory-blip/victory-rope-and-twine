@@ -1417,9 +1417,69 @@ export type AboutSectionSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *AboutSection → About With Two Image → Primary*
+ */
+export interface AboutSectionSliceAboutWithTwoImagePrimary {
+  /**
+   * Image field in *AboutSection → About With Two Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_section.aboutWithTwoImage.primary.image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  image: prismic.ImageField<never>;
+
+  /**
+   * Secondary Image field in *AboutSection → About With Two Image → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_section.aboutWithTwoImage.primary.secondary_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  secondary_image: prismic.ImageField<never>;
+
+  /**
+   * Description field in *AboutSection → About With Two Image → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_section.aboutWithTwoImage.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+
+  /**
+   * Button field in *AboutSection → About With Two Image → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: about_section.aboutWithTwoImage.primary.button
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button: prismic.LinkField;
+}
+
+/**
+ * About With Two Image variation for AboutSection Slice
+ *
+ * - **API ID**: `aboutWithTwoImage`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type AboutSectionSliceAboutWithTwoImage = prismic.SharedSliceVariation<
+  "aboutWithTwoImage",
+  Simplify<AboutSectionSliceAboutWithTwoImagePrimary>,
+  never
+>;
+
+/**
  * Slice variation for *AboutSection*
  */
-type AboutSectionSliceVariation = AboutSectionSliceDefault;
+type AboutSectionSliceVariation =
+  | AboutSectionSliceDefault
+  | AboutSectionSliceAboutWithTwoImage;
 
 /**
  * AboutSection Shared Slice
@@ -3414,8 +3474,10 @@ declare module "@prismicio/client" {
       AllDocumentTypes,
       AboutSectionSlice,
       AboutSectionSliceDefaultPrimary,
+      AboutSectionSliceAboutWithTwoImagePrimary,
       AboutSectionSliceVariation,
       AboutSectionSliceDefault,
+      AboutSectionSliceAboutWithTwoImage,
       BlogsSectionSlice,
       BlogsSectionSliceDefaultPrimary,
       BlogsSectionSliceVariation,

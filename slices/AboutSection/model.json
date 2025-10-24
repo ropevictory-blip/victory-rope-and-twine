@@ -68,6 +68,56 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "aboutWithTwoImage",
+      "name": "About With Two Image",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {
+              "width": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "secondary_image": {
+          "type": "Image",
+          "config": {
+            "label": "Secondary Image",
+            "constraint": {
+              "width": 600
+            },
+            "thumbnails": []
+          }
+        },
+        "description": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Description",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,strong,em,hyperlink"
+          }
+        },
+        "button": {
+          "type": "Link",
+          "config": {
+            "label": "Button",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "select": null,
+            "allowText": true
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }
