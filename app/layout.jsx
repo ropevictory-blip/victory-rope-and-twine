@@ -126,9 +126,9 @@ export default async function RootLayout({ children }) {
                   <Share />
                   <LeadGenerationModal
                     images={ [
-                      "https://images.prismic.io/vrtc/Z4UhHJbqstJ99YeM_SAN_9864.jpg?auto=format,compress",
-                      "https://images.prismic.io/vrtc/Z4UhApbqstJ99YeB_SAN_9866.jpg?auto=format,compress",
-                      "https://images.prismic.io/vrtc/Z4UhFJbqstJ99YeJ_SAN_9860.jpg?auto=format,compress",
+                      // "https://images.prismic.io/vrtc/Z4UhHJbqstJ99YeM_SAN_9864.jpg?auto=format,compress",
+                      // "https://images.prismic.io/vrtc/Z4UhApbqstJ99YeB_SAN_9866.jpg?auto=format,compress",
+                      // "https://images.prismic.io/vrtc/Z4UhFJbqstJ99YeJ_SAN_9860.jpg?auto=format,compress",
                       "https://images.prismic.io/vrtc/aGaAjXfc4bHWjAlW_WhatsAppImage2025-07-03at6.29.27PM.jpeg?auto=format,compress",
                       "https://images.prismic.io/vrtc/aGaAjXfc4bHWjAlX_WhatsAppImage2025-07-03at6.30.54PM.jpeg?auto=format,compress",
                     ] }
