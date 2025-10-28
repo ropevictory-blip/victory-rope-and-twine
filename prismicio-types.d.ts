@@ -3150,71 +3150,6 @@ export type TestimonialsSectionSlice = prismic.SharedSlice<
 >;
 
 /**
- * Primary content in *VideoContent → Video_Content → Primary*
- */
-export interface VideoContentSliceDefaultPrimary {
-  /**
-   * Image field in *VideoContent → Video_Content → Primary*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: video_content.default.primary.image
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  image: prismic.ImageField<never>;
-
-  /**
-   * Heading field in *VideoContent → Video_Content → Primary*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: Heading
-   * - **API ID Path**: video_content.default.primary.heading
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  heading: prismic.KeyTextField;
-
-  /**
-   * video field in *VideoContent → Video_Content → Primary*
-   *
-   * - **Field Type**: Embed
-   * - **Placeholder**: video
-   * - **API ID Path**: video_content.default.primary.video
-   * - **Documentation**: https://prismic.io/docs/field#embed
-   */
-  video: prismic.EmbedField;
-}
-
-/**
- * Video_Content variation for VideoContent Slice
- *
- * - **API ID**: `default`
- * - **Description**: Default
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type VideoContentSliceDefault = prismic.SharedSliceVariation<
-  "default",
-  Simplify<VideoContentSliceDefaultPrimary>,
-  never
->;
-
-/**
- * Slice variation for *VideoContent*
- */
-type VideoContentSliceVariation = VideoContentSliceDefault;
-
-/**
- * VideoContent Shared Slice
- *
- * - **API ID**: `video_content`
- * - **Description**: VideoContent
- * - **Documentation**: https://prismic.io/docs/slice
- */
-export type VideoContentSlice = prismic.SharedSlice<
-  "video_content",
-  VideoContentSliceVariation
->;
-
-/**
  * Item in *WhyUsSection → Default → Primary → Items*
  */
 export interface WhyUsSectionSliceDefaultPrimaryItemsItem {
@@ -3385,9 +3320,89 @@ export type WhyUsSectionSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *WhyUsSection → general → Primary*
+ */
+export interface WhyUsSectionSliceGeneralPrimary {
+  /**
+   * General Heading field in *WhyUsSection → general → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_us_section.general.primary.general_heading
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  general_heading: prismic.KeyTextField;
+
+  /**
+   * General description field in *WhyUsSection → general → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_us_section.general.primary.general_description
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  general_description: prismic.KeyTextField;
+
+  /**
+   * general_image_one field in *WhyUsSection → general → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_us_section.general.primary.general_image_one
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  general_image_one: prismic.ImageField<never>;
+
+  /**
+   * general_image_two field in *WhyUsSection → general → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_us_section.general.primary.general_image_two
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  general_image_two: prismic.ImageField<never>;
+
+  /**
+   * general_image_three field in *WhyUsSection → general → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: why_us_section.general.primary.general_image_three
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  general_image_three: prismic.ImageField<never>;
+
+  /**
+   * Video Link field in *WhyUsSection → general → Primary*
+   *
+   * - **Field Type**: Embed
+   * - **Placeholder**: Enter video link
+   * - **API ID Path**: why_us_section.general.primary.video_link
+   * - **Documentation**: https://prismic.io/docs/field#embed
+   */
+  video_link: prismic.EmbedField;
+}
+
+/**
+ * general variation for WhyUsSection Slice
+ *
+ * - **API ID**: `general`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WhyUsSectionSliceGeneral = prismic.SharedSliceVariation<
+  "general",
+  Simplify<WhyUsSectionSliceGeneralPrimary>,
+  never
+>;
+
+/**
  * Slice variation for *WhyUsSection*
  */
-type WhyUsSectionSliceVariation = WhyUsSectionSliceDefault;
+type WhyUsSectionSliceVariation =
+  | WhyUsSectionSliceDefault
+  | WhyUsSectionSliceGeneral;
 
 /**
  * WhyUsSection Shared Slice
@@ -3562,16 +3577,14 @@ declare module "@prismicio/client" {
       TestimonialsSectionSliceDefaultPrimary,
       TestimonialsSectionSliceVariation,
       TestimonialsSectionSliceDefault,
-      VideoContentSlice,
-      VideoContentSliceDefaultPrimary,
-      VideoContentSliceVariation,
-      VideoContentSliceDefault,
       WhyUsSectionSlice,
       WhyUsSectionSliceDefaultPrimaryItemsItem,
       WhyUsSectionSliceDefaultPrimaryBlocksItem,
       WhyUsSectionSliceDefaultPrimary,
+      WhyUsSectionSliceGeneralPrimary,
       WhyUsSectionSliceVariation,
       WhyUsSectionSliceDefault,
+      WhyUsSectionSliceGeneral,
     };
   }
 }

@@ -138,6 +138,62 @@
         }
       },
       "items": {}
+    },
+    {
+      "id": "general",
+      "name": "general",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "general_heading": {
+          "type": "Text",
+          "config": {
+            "label": "General Heading",
+            "placeholder": ""
+          }
+        },
+        "general_description": {
+          "type": "Text",
+          "config": {
+            "label": "General description",
+            "placeholder": ""
+          }
+        },
+        "general_image_one": {
+          "type": "Image",
+          "config": {
+            "label": "general_image_one",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "general_image_two": {
+          "type": "Image",
+          "config": {
+            "label": "general_image_two",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "general_image_three": {
+          "type": "Image",
+          "config": {
+            "label": "general_image_three",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "video_link": {
+          "type": "Embed",
+          "config": {
+            "label": "Video Link",
+            "placeholder": "Enter video link"
+          }
+        }
+      },
+      "items": {}
     }
   ]
 }
