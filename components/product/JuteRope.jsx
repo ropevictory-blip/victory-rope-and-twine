@@ -33,14 +33,6 @@ const JuteRope = () => {
             Victory Rope &amp; Twine operates with strict quality controls to meet domestic and international
             standards for export.
           </p>
-
-          <h2>Manila Rope and Manila Twine Supplier from India</h2>
-          <p>
-            Although jute is one of our key offerings, we also produce and distribute Manila rope and Manila
-            twine, which are weather-resistant, durable, versatile, and widely used. Made from abaca fibres,
-            Manila products have a broad range of applications in the marine industry, shipping, weightlifting,
-            and décor. We serve industries that prefer natural fibres for their strength and reliability.
-          </p>
           <p>
             As a trusted Manila rope manufacturer and supplier of Manila twine, we have established
             long-standing relationships with clients across multiple regions.
