@@ -1,0 +1,63 @@
+# robots.txt for https://www.victoryropeandtwine.com/
+# Victory Rope & Twine | Premium Rope Manufacturer & Exporter
+
+# -----------------------------------------------
+# Default rules for all crawlers
+# -----------------------------------------------
+
+User-agent: *
+Allow: /
+
+# --- Prismic-specific routes ---
+# Block Prismic preview and toolbar (not for public indexing)
+Disallow: /api/preview
+Disallow: /api/exit-preview
+Disallow: /slice-simulator
+Disallow: /prismic-preview
+
+# --- Next.js internal routes ---
+Disallow: /_next/
+Disallow: /api/
+
+# --- Admin & auth areas ---
+Disallow: /admin/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /dashboard/
+
+# --- Duplicate content / low-value pages ---
+Disallow: /search/
+
+# --- Cart & checkout (if applicable) ---
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /thank-you/
+Disallow: /order-confirmation/
+
+# --- Staging / internal environments ---
+Disallow: /staging/
+Disallow: /test/
+Disallow: /dev/
+
+# -----------------------------------------------
+# Allow static assets for rendering
+# (helps Google render pages correctly)
+# -----------------------------------------------
+Allow: /_next/static/
+Allow: /images/
+Allow: /fonts/
+Allow: /icons/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.gif$
+Allow: /*.ico$
+
+# -----------------------------------------------
+# Sitemap
+# -----------------------------------------------
+Sitemap: https://www.victoryropeandtwine.com/sitemap.xml
