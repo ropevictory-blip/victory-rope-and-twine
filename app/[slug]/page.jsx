@@ -55,6 +55,12 @@ const ProductPage = async ({ params }) => {
   );
 };
 
+const RESERVED_ROUTES = [
+  "about", "blogs", "categories", "contact", "gallery",
+  "press-release", "privacy-policy", "products",
+  "terms-and-conditions", "thank-you",
+];
+
 export async function generateStaticParams() {
   const client = createClient();
 
@@ -66,9 +72,9 @@ export async function generateStaticParams() {
 
   const docs = [...product_page, ...custom_page];
 
-  return docs.map((item) => ({
-    slug: item.uid,
-  }));
+  return docs
+    .filter((item) => !RESERVED_ROUTES.includes(item.uid))
+    .map((item) => ({ slug: item.uid }));
 }
 
 export async function generateMetadata({ params }) {
