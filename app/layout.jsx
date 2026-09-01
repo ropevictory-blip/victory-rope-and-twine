@@ -219,7 +219,7 @@ export default async function RootLayout({ children }) {
                     number="+916292293301"
                     text="Hello! I'm interested in your products."
                     name="Victory Rope & Twine"
-                    icon="https://images.prismic.io/vrtc/aGJdJXfc4bHWi13J_vrtclogo.png?auto=format,compress&w=200"
+                    icon="https://images.prismic.io/vrtc/fJaZcqdFV4Mm4pID_victoryropeandtwine.jpeg?auto=format,compress&w=200"
                     formId="vrtc-website-whatsapp-lead-capture-dlg2qi"
                     message="Hi, Welcome to Victory Rope & Twine. How can I help you?"
                   />
