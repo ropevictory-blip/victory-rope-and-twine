@@ -72,6 +72,47 @@ const organizationSchema = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Victory Rope and Twine",
+  image: "https://images.prismic.io/vrtc/aGJdJXfc4bHWi13J_vrtclogo.png?",
+  "@id": siteUrl,
+  url: siteUrl,
+  telephone: "9038056520",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "AJC Bose Rd",
+    addressLocality: "Kolkata",
+    postalCode: "700017",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 22.5411865,
+    longitude: 88.357092,
+  },
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ],
+    opens: "09:30",
+    closes: "18:30",
+  },
+  sameAs: [
+    "https://www.facebook.com/people/Victory-Rope-Twine/61574816997472/",
+    "https://www.instagram.com/victoryropeandtwine",
+    "https://www.linkedin.com/company/victoryropeandtwine/",
+    "https://www.youtube.com/@victoryrope",
+  ],
+};
+
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: "Victory Rope and Twine",
@@ -193,6 +234,12 @@ export default async function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={ {
             __html: JSON.stringify(organizationSchema),
+          } }
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={ {
+            __html: JSON.stringify(localBusinessSchema),
           } }
         />
         <GoogleAnalytics gaId="G-KGTL5RKT2M" />
