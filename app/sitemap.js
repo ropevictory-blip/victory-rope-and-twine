@@ -78,7 +78,7 @@ export default async function sitemap() {
         createEntry({
           path: `/${item.uid}`,
           lastModified: item.last_publication_date || new Date(),
-          changeFrequency: "weekly",
+          changeFrequency: "daily",
           priority: 0.7,
         }),
       ),
@@ -86,7 +86,7 @@ export default async function sitemap() {
       createEntry({
         path: `/post/${item.uid}`,
         lastModified: item.last_publication_date || new Date(),
-        changeFrequency: "weekly",
+        changeFrequency: "daily",
         priority: 0.7,
       }),
     ),
@@ -94,7 +94,7 @@ export default async function sitemap() {
       createEntry({
         path: `/category/${item.uid}`,
         lastModified: item.last_publication_date || new Date(),
-        changeFrequency: "weekly",
+        changeFrequency: "daily",
         priority: 0.7,
       }),
     ),
