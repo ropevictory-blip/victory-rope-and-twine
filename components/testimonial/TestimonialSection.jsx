@@ -72,7 +72,7 @@ const TestimonialItem = ({ data, index }) => {
               src="https://images.prismic.io/vrtc/Z1q605bqstJ98Ytq_user.png?auto=format,compress"
               width={100}
               height={100}
-              alt="testimonial"
+              alt="Victory Rope and Twine customer testimonial avatar"
             />
           )}
         </div>

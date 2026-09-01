@@ -117,7 +117,7 @@ const LeadGenerationModal = ({ images }) => {
                 <SplideSlide key={index} className="splide-slide">
                   <img
                     src={image}
-                    alt="modal"
+                    alt="Victory Rope and Twine product image for free quote enquiry"
                     loading="lazy"
                     style={{ aspectRatio: "114/139" }}
                   />

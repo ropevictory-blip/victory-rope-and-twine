@@ -13,7 +13,7 @@ const ThankYouPage = () => {
             <img
               loading="lazy"
               src="https://images.prismic.io/vrtc/aG4940MqNJQqHtvc_image.png"
-              alt=""
+              alt="Victory Rope and Twine thank you confirmation"
               style={{
                 width: "100%",
                 maxWidth: "600px",
