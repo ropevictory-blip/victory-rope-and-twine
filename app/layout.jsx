@@ -76,7 +76,7 @@ const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Victory Rope and Twine",
-  image: "https://images.prismic.io/vrtc/aGJdJXfc4bHWi13J_vrtclogo.png?",
+  image: "https://images.prismic.io/vrtc/fJaZcqdFV4Mm4pID_victoryropeandtwine.jpeg",
   "@id": siteUrl,
   url: siteUrl,
   telephone: "9038056520",
