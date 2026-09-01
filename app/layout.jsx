@@ -41,9 +41,45 @@ const poppins = Poppins({
   display: "swap",
 });
 
+const getSiteUrl = () => {
+  const siteId = process.env.PRISMIC_ID;
+  const siteTld = process.env.TLD;
+
+  if (siteId && siteTld) {
+    return `https://${siteId}.${siteTld}`;
+  }
+
+  return "https://www.victoryropeandtwine.com";
+};
+
+const siteUrl = getSiteUrl();
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Victory Rope and Twine",
+  url: siteUrl,
+  sameAs: [
+    "https://www.victoryropeandtwine.com",
+  ],
+  logo: `${siteUrl}/favicon-32x32.png`,
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "sales",
+    telephone: "+91-6292293301",
+    areaServed: "IN",
+    availableLanguage: ["en"],
+  },
+};
+
 export const metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Victory Rope and Twine",
-  description: "",
+  description:
+    "Premium ropes and twines for industrial, commercial, and marine applications.",
+  alternates: {
+    canonical: siteUrl,
+  },
 };
 
 export default async function RootLayout({ children }) {
@@ -153,6 +189,12 @@ export default async function RootLayout({ children }) {
         </main>
 
         <CookiePopup />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={ {
+            __html: JSON.stringify(organizationSchema),
+          } }
+        />
         <GoogleAnalytics gaId="G-KGTL5RKT2M" />
         <PrismicPreview repositoryName={ repositoryName } />
       </body>
