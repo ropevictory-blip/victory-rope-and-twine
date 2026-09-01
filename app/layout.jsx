@@ -60,10 +60,10 @@ export default async function RootLayout({ children }) {
           name="description"
           content="Victory Rope and Twine - Premium Ropes and Twines for every need."
         />
-        <meta
+        {/* <meta
           name="keywords"
           content="ropes, twines, fishing ropes, industrial ropes, Victory Rope"
-        />
+        /> */}
         <meta name="author" content="Victory Rope and Twine" />
         <meta property="og:title" content="Victory Rope and Twine" />
         <meta
