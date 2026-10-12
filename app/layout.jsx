@@ -133,10 +133,10 @@ export default async function RootLayout({ children }) {
         {/* ===== Meta Tags ===== */ }
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
+        {/* <meta
           name="description"
           content="Victory Rope and Twine - Premium Ropes and Twines for every need."
-        />
+        /> */}
         {/* <meta
           name="keywords"
           content="ropes, twines, fishing ropes, industrial ropes, Victory Rope"
